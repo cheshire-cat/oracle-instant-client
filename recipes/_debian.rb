@@ -65,8 +65,6 @@ client_type =
 
 client_dir = "#{oracle_dir}/#{client_version}/#{client_type}"
 
-raise 'Can not find instant client directory' unless File.directory?(client_dir)
-
 file '/etc/ld.so.conf.d/oracle.conf' do
   owner   'root'
   group   'root'
